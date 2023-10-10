@@ -1,0 +1,57 @@
+\documentclass[20pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+
+% Customization -------
+
+% Paper size, margin
+\usepackage[letterpaper,top=1.5cm,bottom=1.5cm,left=1.75cm,right=1.75cm,heightrounded]{geometry}
+
+% line height
+\renewcommand{\baselinestretch}{1.15} % line space
+
+% Paragraph indentation 
+\setlength{\parindent}{0pt} % no indent
+
+% Paragraph spacing
+\setlength{\parskip}{0.8em} % space between paragraphs
+
+% --------------------
+\title{HomeWork 01}
+\author{Farbod Mohammadzadeh\\
+    1008360462}
+\date{04 October 2023}
+
+\begin{document}
+\begin{Large}
+
+
+    \maketitle
+
+    \newpage
+
+    \section*{Problem 1.1}
+
+
+    \subsection*{Norm Requirements}
+    \begin{enumerate}
+        \item Positivity: $\Vert x \Vert_p \geq 0$ and $\Vert x \Vert_p = 0 \iff x = 0$
+        \item Homogeneity: $\Vert \alpha x \Vert_p = |\alpha| \Vert x \Vert_p$
+        \item Sub-additivity: $\Vert x + y \Vert_p \leq \Vert x \Vert_p + \Vert y \Vert_p$
+    \end{enumerate}
+
+    \subsection*{Proof: $l_1$}
+
+    \begin{enumerate}
+        \item Positivity: $\Vert x \Vert_1 = \sum_{i=1}^{n} |x_i| \geq 0$ and $\Vert x \Vert_1 = 0 \iff x_i = 0\ ,  \forall i \in \{1,...,n\}  $
+
+        \item Homogeneity: $\Vert \alpha x \Vert_1 = \sum_{i=1}^{n} |\alpha x_i| = |\alpha| \sum_{i=1}^{n} |x_i| = |\alpha| \Vert x \Vert_1$
+        \item Sub-additivity:
+              \[ \Vert x + y \Vert_1 = \sum_{i=1}^{n} |x_i + y_i| \leq \sum_{i=1}^{n} |x_i| + |y_i| = \Vert x \Vert_1 + \Vert y \Vert_1\]
+
+
+    \end{enumerate}
+
+\end{Large}
+
+\end{document}
