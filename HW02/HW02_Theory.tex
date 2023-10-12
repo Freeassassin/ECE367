@@ -36,6 +36,70 @@
 
 \section*{Problem 2.1}
 
+Consider the list of $n \ n-vectors$
 
+\begin{equation}
+    a_1 = \begin{bmatrix}
+        1      \\
+        0      \\
+        0      \\
+        \vdots \\
+        0
+    \end{bmatrix}, a_2 = \begin{bmatrix}
+        1      \\
+        1      \\
+        0      \\
+        \vdots \\
+        0
+    \end{bmatrix}, \dots, a_n = \begin{bmatrix}
+        1      \\
+        1      \\
+        1      \\
+        \vdots \\
+        1
+    \end{bmatrix}
+\end{equation}
+
+(The vector $a_i$ has its first $i$ entries equal to one, and the remaining entries zero.) Describe
+what happens when you run the Gram–Schmidt algorithm on this list of vectors, $i.e.$, say
+what $q_1, \dots , q_n$ are. Is $a_1, \dots , a_n$ a basis?
+
+\underline{Solution:}
+
+If we apply the Gram-Schmidt algorithm on the given list of vectors, we will through each iteration remove the linearly dependent elements of each $a_i$ vector until we arrive at the following result:
+
+\begin{equation}
+    q_1 = \begin{bmatrix}
+        1      \\
+        0      \\
+        0      \\
+        \vdots \\
+        0
+    \end{bmatrix}, q_2 = \begin{bmatrix}
+        0      \\
+        1      \\
+        0      \\
+        \vdots \\
+        0
+    \end{bmatrix}, \dots, q_n = \begin{bmatrix}
+        0      \\
+        0      \\
+        0      \\
+        \vdots \\
+        1
+    \end{bmatrix}
+\end{equation}
+
+Since the set of $a_1, \dots , a_n$ is entirely linearly independent it is a basis for $\mathbb{R}^n$.
+\newpage
+\section*{Problem 2.2}
+\newpage
+\section*{Problem 2.3}
+\newpage
+
+\section*{Problem 2.4}
+\newpage
+
+\section*{Problem 2.5}
 
 \end{document}
